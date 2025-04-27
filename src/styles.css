@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    background-color: rgb(211, 228, 246);
+    font-family: roboto;
+}
+.images{
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(94, 90, 90, 0.5);
+
+}

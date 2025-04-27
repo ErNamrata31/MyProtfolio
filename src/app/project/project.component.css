@@ -1,0 +1,56 @@
+.project-card {
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(45deg, #6b48ff, #1ea7ff);
+    transition: transform 0.3s ease;
+  
+    &:hover {
+      transform: translateY(-5px);
+    }
+  
+    .card-link {
+      text-decoration: none;
+      color: white;
+      display: block;
+      height: 100%;
+      width: 100%;
+    }
+  
+    .card-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      width: 100%;
+      padding: 20px;
+  
+      h3 {
+        margin: 0;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+      }
+    }
+  
+    &:nth-child(1) { background-image: url('/assets/images/project1.jpg'); }
+    &:nth-child(2) { background-image: url('/assets/images/project2.jpg'); }
+    &:nth-child(3) { background-image: url('/assets/images/project3.jpg'); }
+    &:nth-child(4) { background-image: url('../../assets/images/19.png'); }
+  
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      /* background: linear-gradient(45deg, rgba(244, 244, 246, 0.8), rgba(28, 142, 218, 0.8)); */
+    }
+  }
+  h1{
+    text-align: center;
+    font-weight: 900;
+    }
