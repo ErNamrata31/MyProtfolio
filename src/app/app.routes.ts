@@ -5,8 +5,9 @@ import { SkillsComponent } from './skills/skills.component';
 import { ProjectComponent } from './project/project.component';
 
 export const routes: Routes = [
+    {path:  '',component:HomeComponent},
     {path:  'home',component:HomeComponent},
-    {path:'about-us',component:AboutusComponent},
+    {path:'about',component:AboutusComponent},
     {path:'skills',component:SkillsComponent},
     {path:'projects',component:ProjectComponent},
     {path: 'home', redirectTo: '', pathMatch: 'full' }

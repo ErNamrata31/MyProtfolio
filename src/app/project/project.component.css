@@ -5,7 +5,10 @@
     position: relative;
     background: linear-gradient(45deg, #6b48ff, #1ea7ff);
     transition: transform 0.3s ease;
-  
+    opacity: 0.9;
+     background-repeat: no-repeat;   /* Prevents tiling */
+     background-size: cover;         /* Scales to fill the container */
+     background-position: center; 
     &:hover {
       transform: translateY(-5px);
     }
@@ -26,6 +29,7 @@
       text-align: center;
       width: 100%;
       padding: 20px;
+      
   
       h3 {
         margin: 0;
@@ -51,6 +55,7 @@
       z-index: 1;
       /* background: linear-gradient(45deg, rgba(244, 244, 246, 0.8), rgba(28, 142, 218, 0.8)); */
     }
+
   }
   h1{
     text-align: center;
